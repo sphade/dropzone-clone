@@ -6,6 +6,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { idStore } from '$lib/stores/idStore';
 	import { renameFileModalStore } from '$lib/stores/modalStore';
+	import { Loader2 } from 'lucide-svelte';
 	import toast from 'svelte-french-toast';
 	let loading = false;
 	$: {
@@ -30,13 +31,13 @@
 			method="POST"
 			use:enhance={() => {
 				loading = true;
-
 				return async ({ update }) => {
 					await update();
 					loading = false;
 				};
 			}}
 			action="/dashboard?/editFileName"
+			class="space-y-4"
 		>
 			<div>
 				<p class="py-5">Name</p>
@@ -47,7 +48,8 @@
 			<Dialog.Footer>
 				<Button type="submit">
 					{#if loading}
-						loading...
+						<Loader2 class="animate-spin" />
+					
 					{:else}
 						Save changes
 					{/if}

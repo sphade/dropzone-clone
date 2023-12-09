@@ -5,6 +5,7 @@
 	import * as Dialog from '$lib/components/ui/dialog';
 	import { idStore } from '$lib/stores/idStore';
 	import { deleteModalStore } from '$lib/stores/modalStore';
+	import { Loader2 } from 'lucide-svelte';
 	import toast from 'svelte-french-toast';
 	let loading = false;
 	$: {
@@ -39,12 +40,12 @@
 			}}
 			action="/dashboard?/deleteFile"
 		>
-        <input type="text" name='id' hidden value={$idStore} >
+			<input type="text" name="id" hidden value={$idStore} />
 			<div class="grid grid-cols-2 items-center gap-5">
 				<Button on:click={deleteModalStore.setFalse} variant="outline">cancel</Button>
 				<Button type="submit" variant="destructive">
 					{#if loading}
-						loading...
+						<Loader2 class="animate-spin" />
 					{:else}
 						delete
 					{/if}

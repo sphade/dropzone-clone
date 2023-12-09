@@ -1,5 +1,5 @@
-import deleteFile from '$lib/mutations/deleteFile.js';
-import editFileName from '$lib/mutations/editFileName.js';
+import deleteFile from '$lib/mutations/deleteFile.server.js';
+import editFileName from '$lib/mutations/editFileName.server.js';
 import getFilesCount from '$lib/queries/getFilesCount.js';
 import getUser from '$lib/queries/getUser.js';
 import getUserFiles from '$lib/queries/getUserFiles.js';
@@ -22,33 +22,25 @@ export const actions = {
 		const data = await request.formData();
 		const id = data.get('id') as string;
 		const fileName = data.get('fileName') as string;
-		if (!id) {
-			return fail(422, { editFileNameError: 'the file id is required' });
-		}
-		if (fileName === '') {
-			return fail(422, { editFileNameError: 'name cannot be empty' });
-		}
+
 		try {
-			editFileName(id, fileName);
+			await editFileName(id, fileName);
+			return { editFileNameSuccess: 'edited successfully' };
 		} catch (error) {
 			const errorMessage = (error as Error).message;
-			return fail(422, { error: errorMessage });
+			return fail(422, { editFileNameError: errorMessage });
 		}
-		return { editFileNameSuccess: 'edited successfully' };
 	},
 	deleteFile: async ({ locals, request }) => {
 		const data = await request.formData();
 		const id = data.get('id') as string;
-
 		const { userId } = locals;
-		if (!userId) {
-			return fail(404, { deleteFileError: 'user not found' });
+		try {
+			await deleteFile(id, userId!);
+			return { deleteFileSuccess: 'deleted successfully' };
+		} catch (error) {
+			const errorMessage = (error as Error).message;
+			return fail(422, { deleteFileError: errorMessage });
 		}
-		if (id === '') {
-			return fail(422, { deleteFileError: 'no file selected' });
-		}
-		await deleteFile(id, userId);
-		return { deleteFileSuccess: 'deleted successfully' };
-
 	}
 };

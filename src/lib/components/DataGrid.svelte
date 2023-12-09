@@ -31,7 +31,7 @@
 					<Table.Head>file name</Table.Head>
 					<Table.Head>file size</Table.Head>
 					<Table.Head>date added</Table.Head>
-					<Table.Head class="text-right">link</Table.Head>
+					<Table.Head >link</Table.Head>
 					<Table.Head class="sr-only">delete</Table.Head>
 				</Table.Row>
 			</Table.Header>
@@ -52,8 +52,8 @@
 						</Table.Cell>
 						<Table.Cell>{prettyBytes(file.size)}</Table.Cell>
 						<Table.Cell>{file.timestamp.toDateString()}</Table.Cell>
-						<Table.Cell class="text-right">
-							<Button download variant="link" href={file.downloadUrl}>download</Button>
+						<Table.Cell >
+							<Button download target='_blank' variant="link" href={file.downloadUrl}>download</Button>
 						</Table.Cell>
 						<Table.Cell class="text-right">
 							<Button

@@ -5,10 +5,13 @@
 	import * as Avatar from '$lib/components/ui/avatar';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
-	async function signOut() {
+	import { signOut } from 'firebase/auth';
+	import { auth } from '$lib/firebaseConfig';
+	async function logOut() {
 		await fetch('/', {
 			method: 'DELETE'
 		});
+		await signOut(auth);
 		goto('/');
 	}
 </script>
@@ -18,14 +21,13 @@
 	<div class="flex gap-5 items-center">
 		<ToggleMode />
 		{#if $page.data.user}
-			<Avatar.Root class="cursor-pointer">
+			<Avatar.Root>
 				<Avatar.Image
-					on:click={signOut}
 					src={$page.data.user.profilePic}
 					alt="{$page.data.user.name} profile picture"
 				/>
 			</Avatar.Root>
-			<Button on:click={signOut} variant="ghost" class="">Sign out</Button>
+			<Button on:click={logOut} variant="ghost" class="">Sign out</Button>
 		{/if}
 	</div>
 </header>

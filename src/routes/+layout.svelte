@@ -8,7 +8,6 @@
 <ModeWatcher />
 <Toaster />
 <Header />
-
 <slot />
 
 

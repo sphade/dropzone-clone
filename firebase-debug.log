@@ -1,0 +1,120 @@
+[debug] [2023-12-06T16:55:02.462Z] ----------------------------------------------------------------------
+[debug] [2023-12-06T16:55:02.466Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Local\pnpm\global\5\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-06T16:55:02.467Z] CLI Version:   12.6.1
+[debug] [2023-12-06T16:55:02.467Z] Platform:      win32
+[debug] [2023-12-06T16:55:02.467Z] Node Version:  v20.10.0
+[debug] [2023-12-06T16:55:02.467Z] Time:          Wed Dec 06 2023 17:55:02 GMT+0100 (West Africa Standard Time)
+[debug] [2023-12-06T16:55:02.467Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-06T16:55:02.607Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-06T16:55:02.608Z] > authorizing via signed-in user (sphade012@gmail.com)
+[debug] [2023-12-06T16:55:02.608Z] [iam] checking project dropbox-clone-21716 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-06T16:55:02.612Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions [none]
+[debug] [2023-12-06T16:55:02.612Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions x-goog-quota-user=projects/dropbox-clone-21716
+[debug] [2023-12-06T16:55:02.612Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T16:55:05.133Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions 200
+[debug] [2023-12-06T16:55:05.134Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T16:55:05.137Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 [none]
+[debug] [2023-12-06T16:55:06.380Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 200
+[debug] [2023-12-06T16:55:06.381Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 {"projectId":"dropbox-clone-21716","projectNumber":"789840958993","displayName":"dropbox-clone","name":"projects/dropbox-clone-21716","resources":{"hostingSite":"dropbox-clone-21716","storageBucket":"dropbox-clone-21716.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5d47a460-4f88-4f2c-8d06-6961e1d61ecd"}
+[debug] [2023-12-06T16:55:20.400Z] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at findDependency (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\frameworks\utils.js:187:23)
+    at prepareFrameworks (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\frameworks\index.js:123:67)
+    at deploy (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\deploy\index.js:55:54)
+    at Command.actionFn (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\commands\deploy.js:79:32)
+    at C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\command.js:228:25
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-06T16:56:48.794Z] ----------------------------------------------------------------------
+[debug] [2023-12-06T16:56:48.801Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Local\pnpm\global\5\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-06T16:56:48.801Z] CLI Version:   12.6.1
+[debug] [2023-12-06T16:56:48.802Z] Platform:      win32
+[debug] [2023-12-06T16:56:48.802Z] Node Version:  v20.10.0
+[debug] [2023-12-06T16:56:48.802Z] Time:          Wed Dec 06 2023 17:56:48 GMT+0100 (West Africa Standard Time)
+[debug] [2023-12-06T16:56:48.803Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-06T16:56:48.926Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-06T16:56:48.926Z] > authorizing via signed-in user (sphade012@gmail.com)
+[debug] [2023-12-06T16:56:48.927Z] [iam] checking project dropbox-clone-21716 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-06T16:56:48.929Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions [none]
+[debug] [2023-12-06T16:56:48.930Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions x-goog-quota-user=projects/dropbox-clone-21716
+[debug] [2023-12-06T16:56:48.930Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T16:56:52.295Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions 200
+[debug] [2023-12-06T16:56:52.296Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T16:56:52.298Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 [none]
+[debug] [2023-12-06T16:56:52.964Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 200
+[debug] [2023-12-06T16:56:52.965Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 {"projectId":"dropbox-clone-21716","projectNumber":"789840958993","displayName":"dropbox-clone","name":"projects/dropbox-clone-21716","resources":{"hostingSite":"dropbox-clone-21716","storageBucket":"dropbox-clone-21716.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5d47a460-4f88-4f2c-8d06-6961e1d61ecd"}
+[debug] [2023-12-06T16:57:09.583Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\sphade012_gmail_com_application_default_credentials.json
+[debug] [2023-12-06T16:57:09.623Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites pageToken=&pageSize=10
+[debug] [2023-12-06T16:57:12.325Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites 200
+[debug] [2023-12-06T16:57:12.326Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites {"sites":[{"name":"projects/dropbox-clone-21716/sites/dropbox-clone-21716","defaultUrl":"https://dropbox-clone-21716.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-06T16:57:12.329Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites 
+[debug] [2023-12-06T16:57:13.352Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites 200
+[debug] [2023-12-06T16:57:13.353Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites {"sites":[{"name":"projects/dropbox-clone-21716/sites/dropbox-clone-21716","defaultUrl":"https://dropbox-clone-21716.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-06T16:57:13.355Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716/webApps/-/config [none]
+[debug] [2023-12-06T16:57:14.339Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716/webApps/-/config 200
+[debug] [2023-12-06T16:57:14.340Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716/webApps/-/config {"projectId":"dropbox-clone-21716","appId":"1:789840958993:web:0f37ac743111ba13c443b0","storageBucket":"dropbox-clone-21716.appspot.com","locationId":"us-central","apiKey":"AIzaSyDLMrko0rodwnZUY9x9a3mNOVYD6ngTvq4","authDomain":"dropbox-clone-21716.firebaseapp.com","messagingSenderId":"789840958993","measurementId":"G-V4VN631TWT"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-06T17:02:34.070Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-12-06T17:03:06.261Z] ----------------------------------------------------------------------
+[debug] [2023-12-06T17:03:06.267Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Local\pnpm\global\5\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-12-06T17:03:06.268Z] CLI Version:   12.6.1
+[debug] [2023-12-06T17:03:06.269Z] Platform:      win32
+[debug] [2023-12-06T17:03:06.269Z] Node Version:  v20.10.0
+[debug] [2023-12-06T17:03:06.269Z] Time:          Wed Dec 06 2023 18:03:06 GMT+0100 (West Africa Standard Time)
+[debug] [2023-12-06T17:03:06.270Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-12-06T17:03:06.437Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-12-06T17:03:06.438Z] > authorizing via signed-in user (sphade012@gmail.com)
+[debug] [2023-12-06T17:03:06.439Z] [iam] checking project dropbox-clone-21716 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-12-06T17:03:06.442Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions [none]
+[debug] [2023-12-06T17:03:06.442Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions x-goog-quota-user=projects/dropbox-clone-21716
+[debug] [2023-12-06T17:03:06.443Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T17:03:09.279Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions 200
+[debug] [2023-12-06T17:03:09.280Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/dropbox-clone-21716:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-12-06T17:03:09.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 [none]
+[debug] [2023-12-06T17:03:10.365Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 200
+[debug] [2023-12-06T17:03:10.366Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/dropbox-clone-21716 {"projectId":"dropbox-clone-21716","projectNumber":"789840958993","displayName":"dropbox-clone","name":"projects/dropbox-clone-21716","resources":{"hostingSite":"dropbox-clone-21716","storageBucket":"dropbox-clone-21716.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_5d47a460-4f88-4f2c-8d06-6961e1d61ecd"}
+[debug] [2023-12-06T17:03:25.049Z] defaultcredentials: writing to file C:\Users\HP\AppData\Roaming\firebase\sphade012_gmail_com_application_default_credentials.json
+[debug] [2023-12-06T17:03:25.089Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites pageToken=&pageSize=10
+[debug] [2023-12-06T17:03:27.715Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites 200
+[debug] [2023-12-06T17:03:27.717Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/dropbox-clone-21716/sites {"sites":[{"name":"projects/dropbox-clone-21716/sites/dropbox-clone-21716","defaultUrl":"https://dropbox-clone-21716.web.app","appId":"1:789840958993:web:0f37ac743111ba13c443b0","type":"DEFAULT_SITE"}]}
+[debug] [2023-12-06T17:03:27.719Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:789840958993:web:0f37ac743111ba13c443b0/config [none]
+[debug] [2023-12-06T17:03:28.982Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:789840958993:web:0f37ac743111ba13c443b0/config 200
+[debug] [2023-12-06T17:03:28.982Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:789840958993:web:0f37ac743111ba13c443b0/config {"projectId":"dropbox-clone-21716","appId":"1:789840958993:web:0f37ac743111ba13c443b0","storageBucket":"dropbox-clone-21716.appspot.com","locationId":"us-central","apiKey":"AIzaSyDLMrko0rodwnZUY9x9a3mNOVYD6ngTvq4","authDomain":"dropbox-clone-21716.firebaseapp.com","messagingSenderId":"789840958993","measurementId":"G-V4VN631TWT"}
+[info] 
+   Thank you for trying our experimental support for SvelteKit on Firebase Hosting.
+   While this integration is maintained by Googlers it is not a supported Firebase product.
+   Issues filed on GitHub will be addressed on a best-effort basis by maintainers and other community members.
+
+   Documentation: https://firebase.google.com/docs/hosting/frameworks/frameworks-overview
+   File a bug: https://github.com/firebase/firebase-tools/issues/new?template=bug_report.md
+   Submit a feature request: https://github.com/firebase/firebase-tools/issues/new?template=feature_request.md
+
+   We'd love to learn from you. Express your interest in helping us shape the future of Firebase Hosting: https://goo.gle/41enW5X
+
+[debug] [2023-12-06T17:06:09.080Z] Error: Command failed: npm i --omit dev --no-audit
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at prepareFrameworks (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\frameworks\index.js:367:42)
+    at async deploy (C:\Users\HP\AppData\Local\pnpm\global\5\.pnpm\firebase-tools@12.6.1\node_modules\firebase-tools\lib\deploy\index.js:55:13)
+[error] 
+[error] Error: An unexpected error has occurred.

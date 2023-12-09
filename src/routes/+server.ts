@@ -1,5 +1,5 @@
 import { adminAuth } from '$lib/server/firebaseAdmin.js';
-import { error, json, redirect } from '@sveltejs/kit';
+import { error, json } from '@sveltejs/kit';
 
 export async function POST({ request, cookies }) {
 	const idToken = await request.json();
@@ -18,7 +18,6 @@ export async function POST({ request, cookies }) {
 }
 
 export const DELETE = async ({ cookies }) => {
-	console.log('signing out');
 	cookies.delete('__session', { path: '/' });
 	return json({ status: 'signedOut' });
 };
